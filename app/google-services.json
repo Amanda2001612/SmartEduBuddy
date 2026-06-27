@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "203643680880",
+    "project_id": "smartedubuddy",
+    "storage_bucket": "smartedubuddy.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203643680880:android:2a45763866436505e79cb5",
+        "android_client_info": {
+          "package_name": "com.example.qr_paring_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWUX1yjBafecwg4ZPoVZIfW2T2NmBu7S0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

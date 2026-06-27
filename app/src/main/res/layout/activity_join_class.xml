@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join Classroom 🏫"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1E293B"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the Class Code and select your child's grade to link."
+            android:textSize="14sp"
+            android:textColor="#64748B"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#E2E8F0"
+            android:layout_marginBottom="16dp">
+            <EditText
+                android:id="@+id/etChildName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="Enter Child's Full Name"
+                android:paddingHorizontal="16dp"
+                android:inputType="textPersonName"
+                android:textSize="16sp"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#E2E8F0"
+            android:layout_marginBottom="16dp">
+            <Spinner
+                android:id="@+id/spinnerChildGrade"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="12dp"
+                android:spinnerMode="dropdown"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#E2E8F0"
+            android:layout_marginBottom="24dp">
+            <EditText
+                android:id="@+id/etClassCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="Enter Class Code"
+                android:paddingHorizontal="16dp"
+                android:inputType="text"
+                android:textSize="16sp"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnJoinClass"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Join &amp; Link Child"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:backgroundTint="#673AB7"
+            app:cornerRadius="16dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
